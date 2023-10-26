@@ -10,7 +10,7 @@
 //   const [isLoading, setIsLoading] = useState(true);
 
 //   useEffect(()=>{
-//     axios.get('http://192.168.10.13:9292/other-api/jobs/allJobs')
+//     axios.get('Replace with your api')
 //     .then((response)=> {
 //       setJdInfo(response.data);
 //       setIsLoading(false);
