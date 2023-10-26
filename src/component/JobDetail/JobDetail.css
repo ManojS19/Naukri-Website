@@ -1,0 +1,184 @@
+.navbar{
+    position: fixed;
+    top: 0;
+}
+
+.all-jobInfo{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.all .search-input{
+    margin-top: 120px;
+}
+
+.jds{
+    margin-bottom: 40px;
+    display: none;
+}
+
+.jds:nth-child(-n+30){
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.jobInfo{
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) ;
+    border-radius: 8px;
+    width: 30rem;
+    max-height: fit-content;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+}
+
+.jobInfo:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px);
+}
+
+.all-jobName{
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+
+.all-jobInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.load-page h1{
+    margin-top: 120px;
+    text-align: center;
+}
+
+.comp-review{
+    display: flex;
+    color: #999999;
+    margin-bottom: 20px;
+
+    .comp-name{
+        margin-right: 8px;
+    }
+
+    .job-review i{
+        color: gold;
+    }
+
+    .bar-line{
+        margin: 0 8px 0 8px;
+    }
+}
+
+
+.date-pack-loc{
+    display: flex;
+    color: #999999;
+    margin-bottom: 5px;
+
+
+    .bar-line {
+        margin: 0 8px 0 8px;
+    }
+
+    .job-dpl i{
+        margin-right: 8px;
+    }
+}
+
+.job-skills{
+    color: #999999;
+}
+
+.job-skills i{
+    margin-right: 8px;
+}
+
+.job-experience{
+    color: #999999;
+}
+
+.job-experience i{
+    margin-right: 8px;
+}
+
+.jobType{
+    color: #999999;
+    margin: 8px 0 0 20px;
+}
+
+
+
+.search-bar-all{
+    margin-top: 80px;
+}
+
+.search-bar-container{
+    padding-top: 5vh;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+}
+
+
+
+@media (max-width: 850px) {
+    .all .search-input {
+      margin-top: 80px;
+    }
+
+    .all-jobInfo{
+      margin-bottom: 40px;
+    }
+  
+    .jds {
+
+       width: 100%;
+       margin: 10px auto; 
+    }
+  
+    .jobInfo {
+      max-width: 90%; 
+      margin: 10px auto; 
+    }
+  
+    .all-jobInfo {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+    }
+
+    .date-pack-loc{
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 30px;
+    } 
+  
+    .search-bar-all {
+      margin-top: 60px;
+    }
+  
+    .search-bar-container {
+      width: 80%; 
+    }
+  }
+
+
+
+
+
+

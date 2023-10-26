@@ -1,0 +1,211 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.all-cover{
+    margin-top: 120px;
+}
+
+.load-page h1{
+    margin-top: 120px;
+    text-align: center;
+}
+
+.all-info{
+    padding-top: 20px;
+}
+
+.main-card .companyInfo,.job-discription{
+    /* border: 1px solid #ccc; */
+    background: #fff;
+    color: #222;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.25);
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.companyInfo{
+    padding: 20px;
+}
+
+.companyInfo .jobComp-info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.jobComp-info .job-info{
+    margin-bottom: 4px;
+}
+
+.jobComp-info .comp-info{
+    display: flex;
+    color: #999999;
+}
+
+.comp-info .comp-name{
+    margin-right: 10px;
+}
+.job-review i{
+    color: gold;
+}
+
+.comp-info .bar-line{
+    margin: 0 8px 0 8px;
+}
+
+.exp-pack-loc .exp-pack{
+    display: flex;
+    color: #999999;
+}
+
+.job-dpl i{
+    margin-right: 4px;
+}
+
+.exp-pack-loc{
+    margin-bottom: 10px;
+}
+
+.exp-pack-loc .exp-pack .bar-line{
+    margin: 0 8px 0 8px;
+}
+
+.exp-pack-loc .loc{
+    color: #999999;
+}
+
+.loc i{
+    margin-right: 4px;
+}
+
+.time-venue h3{
+    margin-bottom: 4px;
+}
+
+.time-venue .t-v{
+    color: #999999;
+}
+
+.t-v i{
+    margin-right: 4px;
+}
+
+.log-reg-button{
+    margin: 20px;
+}
+
+.log-reg-button .register{
+    margin-right: 20px;
+    padding: 10px 7px 10px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #007acc;
+    color: #007acc;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.register:hover{
+    background: #e8e8e8;
+
+}
+
+.log-reg-button .login{
+    padding: 10px 7px 10px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #007acc;
+    border: 1px solid #007acc;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.login:hover{
+    border: 1px solid #004d80;
+    background: #004d80;
+    color: #fff;
+
+}
+
+.applyButton{
+    margin: 20px;
+}
+
+.applyButton button{
+    padding: 10px 40px;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    background: #007acc;
+    color: #fff;    
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.applyButton button:hover{
+    background: #004d80;
+    color: #fff;
+}
+
+
+.job-discription{
+    padding: 20px;
+}
+
+.job-discription h3{
+    margin-bottom: 10px;
+}
+
+.job-discription .job-detail{
+    color: #999999;
+    margin-bottom: 20px;
+}
+
+.job-discription .key-skills h4{
+    margin-bottom: 10px;
+}
+
+.job-discription .key-skills p{
+    margin-bottom: 20px;
+    color: #999999;
+}
+
+
+@media (max-width: 768px) {
+    .all-cover {
+      margin-top: 80px;
+    }
+
+    .log-reg-button {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .log-reg-button .register{
+        margin-bottom: 15px;
+      }
+
+      .log-reg-button .login{
+        margin-right: 20px;
+      }
+  
+    .main-card .companyInfo,
+    .job-discription {
+      width: 90%; 
+    }
+  }
