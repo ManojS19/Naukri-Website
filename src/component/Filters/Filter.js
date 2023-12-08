@@ -106,7 +106,7 @@ function Filter({ filters, filterOptions, handleFilterChange, applyFilters, clea
 
 
 
-      {/* SALARY */}
+        {/* SALARY */}
 
       </div>
       <div className="filter">

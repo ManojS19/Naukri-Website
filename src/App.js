@@ -15,46 +15,46 @@ import ApplyJob from './component/ApplyJob/ApplyJob';
 function App() {
   return (
     <div className="App">
-      
+
       <div className='navbar'>
-        <Navbar/>
+        <Navbar />
       </div>
 
 
-        <Routes>
-          <Route path='/' element={<JobDetail/>}/>
-          <Route path='/getJd/:jdId' element={<JdSummary/>}/>
-          <Route path='/login' element={<Login/>}/>
-          <Route path='/signUp' element={<SignUp/>}/>
-          <Route element={<ErrorHandlePage/>}/>
+      <Routes>
+        <Route path='/' element={<JobDetail />} />
+        <Route path='/getJd/:jdId' element={<JdSummary />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signUp' element={<SignUp />} />
+        <Route path='*' element={<ErrorHandlePage />} />
 
-          
-          <Route path='/apply'
-           element={
-           <RequireAuth>
-            <ApplyJob/>
-           </RequireAuth>
-          }
-          />
 
-          <Route path='/about' 
-          element={
-          <RequireAuth>
-            <About/>
-          </RequireAuth>
-        }
-        />
-        
-          <Route path='/contacts' 
+        <Route path='/apply'
           element={
             <RequireAuth>
-              <Contact/>
+              <ApplyJob />
             </RequireAuth>
           }
-          />
+        />
 
-        </Routes>
-      
+        <Route path='/about'
+          element={
+            <RequireAuth>
+              <About />
+            </RequireAuth>
+          }
+        />
+
+        <Route path='/contacts'
+          element={
+            <RequireAuth>
+              <Contact />
+            </RequireAuth>
+          }
+        />
+
+      </Routes>
+
     </div>
   );
 }

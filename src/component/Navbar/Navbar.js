@@ -4,20 +4,20 @@ import { Link, useNavigate } from 'react-router-dom';
 import useAuth from '../../useAuth';
 function Navbar() {
 
-  const[ clicked, setClicked]=useState(false);
+  const [clicked, setClicked] = useState(false);
 
-  const handleClick=()=>{
+  const handleClick = () => {
     setClicked(!clicked);
   }
 
-  const handleCheck=()=>{
+  const handleCheck = () => {
     setClicked(false);
   }
 
   const { authed, logout } = useAuth();
-  const navigate= useNavigate();
+  const navigate = useNavigate();
 
-  const handleLogout= ()=>{
+  const handleLogout = () => {
     logout();
     navigate("/");
   };

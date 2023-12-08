@@ -131,7 +131,7 @@
 
 
 
- .main-footer {
+.main-footer {
   background-color: #222;
   padding: 40px 20px;
 }
@@ -170,7 +170,7 @@
   margin: 0.4rem;
   font-size: 2rem;
   transition: all 0.3s ease-in-out;
-  padding: 0.15rem;
+  width: 32px;
   border-radius: 4px;
 }
 
@@ -196,7 +196,7 @@
   margin-top: 20px;
 }
 
-.footer-detail .footer-list ul{
+.footer-detail .footer-list ul {
   list-style: none;
 }
 

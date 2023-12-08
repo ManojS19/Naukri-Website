@@ -10,18 +10,18 @@
 //   const [isLoading, setIsLoading] = useState(true);
 
 //   useEffect(()=>{
-//     axios.get('Replace with your api')
+//     axios.get('http://192.168.10.13:9292/other-api/jobs/allJobs')
 //     .then((response)=> {
 //       setJdInfo(response.data);
 //       setIsLoading(false);
-      
+
 //     })
 //     .catch(error=> {
 //       console.error('Error fetching : ', error);
 //       setIsLoading(false);
 //     });
 //     // console.log(jdInfo)
-     
+
 
 //   },[])
 //   return (
@@ -29,10 +29,10 @@
 //       <div className='navbar'>
 //         {/* <Navbar/> */}
 //       </div>
-      
+
 //       <div className='all'>
 //         {/* {JSON.stringify(jdInfo)}; */}
-        
+
 //         {isLoading ? (<div className='load-page'><h1>Loading....</h1></div>
 //         ):(
 //         <>
@@ -44,44 +44,44 @@
 
 //               <div className='jds' key={id}>
 //               <Link to={`/getJd/${id}`}>
-          
-              // <div className='jobInfo'>
 
-              //   <div className='all-jobName' >
-              //     <h2>{requirementName}</h2>
-              //   </div>
+// <div className='jobInfo'>
 
-              //   <div className='comp-review'>
-              //     <div className='comp-name'>
-              //       <h4>{list.clientName}</h4>
-              //     </div>
-              //     <div className='job-review'>
-              //       <i className='fa fa-star'></i> 4.8
-              //     </div>
-              //     <div className='bar-line'>|</div>
-              //     <div className='job-review'>
-              //       6 Review
-              //     </div>
-              //   </div>
+//   <div className='all-jobName' >
+//     <h2>{requirementName}</h2>
+//   </div>
 
-              //   <div className='date-pack-loc'>
-              //     <div className='job-dpl'>
-              //       <i className='fa fa-calendar-days'></i> {createdAt}
-              //     </div>
-              //     <div className='bar-line'>|</div>
-              //     <div className='job-dpl'>
-              //       <i className='fa fa-indian-rupee-sign'></i> {offeringCtcRange}
-              //     </div>
-              //     <div className='bar-line'>|</div>
-              //     <div className='job-dpl'>
-              //     <i className='fa fa-location-dot'></i> {workLocation}
-              //     </div>
-              //   </div>
+//   <div className='comp-review'>
+//     <div className='comp-name'>
+//       <h4>{list.clientName}</h4>
+//     </div>
+//     <div className='job-review'>
+//       <i className='fa fa-star'></i> 4.8
+//     </div>
+//     <div className='bar-line'>|</div>
+//     <div className='job-review'>
+//       6 Review
+//     </div>
+//   </div>
 
-              //   <div className='job-skills'>
-              //     <i className='fa fa-clipboard'></i> {skills}
-              //   </div>
-              //  </div>
+//   <div className='date-pack-loc'>
+//     <div className='job-dpl'>
+//       <i className='fa fa-calendar-days'></i> {createdAt}
+//     </div>
+//     <div className='bar-line'>|</div>
+//     <div className='job-dpl'>
+//       <i className='fa fa-indian-rupee-sign'></i> {offeringCtcRange}
+//     </div>
+//     <div className='bar-line'>|</div>
+//     <div className='job-dpl'>
+//     <i className='fa fa-location-dot'></i> {workLocation}
+//     </div>
+//   </div>
+
+//   <div className='job-skills'>
+//     <i className='fa fa-clipboard'></i> {skills}
+//   </div>
+//  </div>
 //               </Link>
 //               </div>
 //             )
@@ -93,7 +93,7 @@
 //       )
 //       }
 //       </div>
-      
+
 //     </>
 //   );
 // }
@@ -152,10 +152,10 @@
 //       <div className='navbar'>
 //          {/* <Navbar/> */}
 //        </div>
-      
+
 //        <div className='all'>
 //          {/* {JSON.stringify(jdInfo)}; */}
-        
+
 //          {isLoading ? (<div className='load-page'><h1>Loading....</h1></div>
 //          ):(
 //          <>
@@ -237,7 +237,7 @@
 //           );
 //         })}
 //       </div>
-      
+
 //       {/* ... (Rest of the JSX) */}
 
 
@@ -435,7 +435,7 @@
 
 
 
-                        
+
 //                    <div className='all-jobName' >
 //                    <h2>{job_title}</h2>
 //                  </div>
@@ -731,8 +731,8 @@
 
 
 
-                        
-                        
+
+
 //                     <div className='all-jobName' >
 //                     <h2>{job_title}</h2>
 //                   </div>
@@ -947,7 +947,7 @@
 //                 <SearchResultsList results={results} setSearchKeyword={setSearchKeyword} />
 //               </div>
 //             </div> */}
-            
+
 //             {/* search with results */}
 //             {/* <SearchWithResults jobs={jobs} onSearch={handleSearch} /> */}
 
@@ -981,8 +981,8 @@
 
 
 
-                        
-                        
+
+
 //                     <div className='all-jobName' >
 //                     <h2>{job_title}</h2>
 //                   </div>
@@ -1240,7 +1240,7 @@ function App() {
   const formatSalary = (salary) => {
     if (salary >= 100000) {
       // return salary;
-       return `${(salary / 100000).toFixed(2)} Lakh`;
+      return `${(salary / 100000).toFixed(2)} Lakh`;
     } else {
       return salary.toLocaleString();
     }
@@ -1267,17 +1267,17 @@ function App() {
                 <SearchResultsList results={results} setSearchKeyword={setSearchKeyword} />
               </div>
             </div> */}
-            
+
             {/* search with results */}
             {/* <SearchWithResults jobs={jobs} onSearch={handleSearch} /> */}
 
             <Filter
-            className='filterTag'
-            filters={filters}
-            filterOptions={filterOptions}
-            handleFilterChange={handleFilterChange}
-            applyFilters={applyFilters}
-            clearFilters={clearFilters}
+              className='filterTag'
+              filters={filters}
+              filterOptions={filterOptions}
+              handleFilterChange={handleFilterChange}
+              applyFilters={applyFilters}
+              clearFilters={clearFilters}
             />
 
             <div className="all-jobInfo">
@@ -1303,51 +1303,51 @@ function App() {
 
 
 
-                        
-                        
-                    <div className='all-jobName' >
-                        <h2>{job_title}</h2>
-                    </div>
-                  <div className='comp-review'>
-                    <div className='comp-name'>
-                      <h4>{company_name}</h4>
-                    </div>
-                    <div className='job-review'>
-                      <i className='fa fa-star'></i> 4.8
-                    </div>
-                    <div className='bar-line'>|</div>
-                    <div className='job-review'>
-                      6 Review
-                    </div>
-                  </div>
-                  <div className='date-pack-loc'>
-                    <div className='job-dpl'>
-                      <i className='fa fa-calendar-days'></i>
-                       {application_deadline}
-                    </div>
-                    <div className='bar-line'>|</div>
-                    <div className='job-dpl'>
-                      <i className='fa fa-indian-rupee-sign'></i>
-                       {formatSalary(salary)}
-                    </div>
-                    <div className='bar-line'>|</div>
-                    <div className='job-dpl'>
-                    <i className='fa fa-location-dot'></i>
-                     {location}
-                    </div>
-                  </div>
-                  <div className='job-skills'>
-                    <i className='fa fa-clipboard'></i>
-                     {skills_required}
-                  </div>
-                  <div className='job-experience'>
-                    <i className='fa fa-suitcase'></i>
-                    {experience_years} Yrs
-                  </div>
 
-                  <div className='jobType'>
-                    {job_type}
-                  </div>
+
+                        <div className='all-jobName' >
+                          <h2>{job_title}</h2>
+                        </div>
+                        <div className='comp-review'>
+                          <div className='comp-name'>
+                            <h4>{company_name}</h4>
+                          </div>
+                          <div className='job-review'>
+                            <i className='fa fa-star'></i> 4.8
+                          </div>
+                          <div className='bar-line'>|</div>
+                          <div className='job-review'>
+                            6 Review
+                          </div>
+                        </div>
+                        <div className='date-pack-loc'>
+                          <div className='job-dpl'>
+                            <i className='fa fa-calendar-days'></i>
+                            {application_deadline}
+                          </div>
+                          <div className='bar-line'>|</div>
+                          <div className='job-dpl'>
+                            <i className='fa fa-indian-rupee-sign'></i>
+                            {formatSalary(salary)}
+                          </div>
+                          <div className='bar-line'>|</div>
+                          <div className='job-dpl'>
+                            <i className='fa fa-location-dot'></i>
+                            {location}
+                          </div>
+                        </div>
+                        <div className='job-skills'>
+                          <i className='fa fa-clipboard'></i>
+                          {skills_required}
+                        </div>
+                        <div className='job-experience'>
+                          <i className='fa fa-suitcase'></i>
+                          {experience_years} Yrs
+                        </div>
+
+                        <div className='jobType'>
+                          {job_type}
+                        </div>
 
 
 
